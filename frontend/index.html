@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fevafit Dashboard</title>
+
+    <!-- Tailwind CDN for quick development (generates utilities at runtime) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      // lightweight inline config to mirror your tailwind.config.cjs extensions
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#6B21A8"
+            },
+            spacing: {
+              72: "18rem"
+            }
+          }
+        },
+        safelist: ["bg-purple-600","text-white","hidden","flex"]
+      }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
